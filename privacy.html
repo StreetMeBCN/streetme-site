@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StreetMe — Política de Privacidad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blue:#0052CC;
+    --blue-dark:#003C99;
+    --gold:#FFD700;
+    --ink:#12161C;
+    --paper:#F7F8FA;
+    --line:#E3E7EE;
+    --muted:#5B6472;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Plus Jakarta Sans', sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  header{
+    background:var(--blue);
+    color:#fff;
+    padding:56px 24px 48px;
+    position:relative;
+    overflow:hidden;
+  }
+  header::after{
+    content:"";
+    position:absolute;
+    right:-60px; top:-60px;
+    width:220px; height:220px;
+    border-radius:50%;
+    background:var(--gold);
+    opacity:0.18;
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:800;
+    font-size:20px;
+    letter-spacing:-0.02em;
+  }
+  .brand .dot{
+    width:10px;height:10px;border-radius:50%;
+    background:var(--gold);
+  }
+  header h1{
+    font-size:clamp(28px,4.5vw,38px);
+    font-weight:800;
+    letter-spacing:-0.03em;
+    margin:24px 0 8px;
+  }
+  header p{
+    font-size:15px;
+    color:#D9E4FF;
+    margin:0;
+  }
+  main{
+    max-width:720px;
+    margin:0 auto;
+    padding:40px 24px 96px;
+  }
+  section{
+    margin-bottom:28px;
+  }
+  section h2{
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    color:var(--blue);
+    font-weight:800;
+    margin:0 0 10px;
+  }
+  section p, section li{
+    font-size:15.5px;
+    line-height:1.7;
+    color:var(--ink);
+    margin:0 0 10px;
+  }
+  section ul{padding-left:20px;margin:0;}
+  a{color:var(--blue-dark);}
+  .back{
+    display:inline-block;
+    margin-bottom:24px;
+    font-size:14px;
+    font-weight:600;
+    color:var(--muted);
+    text-decoration:none;
+  }
+  footer{
+    text-align:center;
+    padding:32px 24px 48px;
+    color:var(--muted);
+    font-size:13px;
+  }
+  footer a{color:var(--muted);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand"><span class="dot"></span>StreetMe</div>
+  <h1>Política de Privacidad</h1>
+  <p>Última actualización: 29 de julio de 2026</p>
+</header>
+
+<main>
+  <a class="back" href="index.html">← Volver a soporte</a>
+
+  <section>
+    <h2>Introducción</h2>
+    <p>StreetMe respeta tu privacidad. Esta política explica qué información utiliza la app, con qué finalidad y cómo se trata.</p>
+  </section>
+
+  <section>
+    <h2>Datos de ubicación</h2>
+    <p>StreetMe usa la ubicación de tu dispositivo para mostrarte lugares cercanos (gastronomía, compras y cultura) y para calcular itinerarios y rutas. Esta información se procesa en el momento de uso y no se almacena en servidores propios de StreetMe.</p>
+  </section>
+
+  <section>
+    <h2>Google Places y Google Directions</h2>
+    <p>StreetMe utiliza las APIs de Google Places y Google Directions para mostrar información de lugares (nombre, dirección, horarios, valoraciones) y calcular rutas entre puntos. El uso de estos servicios está sujeto adicionalmente a la política de privacidad de Google.</p>
+    <p><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad de Google →</a></p>
+  </section>
+
+  <section>
+    <h2>Almacenamiento en tu dispositivo</h2>
+    <p>Tus lugares guardados, calles personalizadas e itinerarios se almacenan únicamente en tu dispositivo. StreetMe no requiere la creación de una cuenta ni recopila datos personales identificables.</p>
+  </section>
+
+  <section>
+    <h2>Contenido de la app</h2>
+    <p>StreetMe no almacena, sube ni comparte fotografías tomadas por el usuario ni contenido generado por el usuario.</p>
+  </section>
+
+  <section>
+    <h2>Terceros</h2>
+    <ul>
+      <li>Google Places API (información de lugares)</li>
+      <li>Google Directions API (cálculo de rutas)</li>
+      <li>Google Maps SDK (visualización de mapas)</li>
+    </ul>
+    <p>StreetMe no vende datos a terceros ni los utiliza con fines publicitarios.</p>
+  </section>
+
+  <section>
+    <h2>Cambios en esta política</h2>
+    <p>Podemos actualizar esta política ocasionalmente. Cualquier cambio relevante se reflejará en esta página con su fecha de actualización.</p>
+  </section>
+
+  <section>
+    <h2>Contacto</h2>
+    <p>Para cualquier duda sobre esta política, escríbenos a <a href="mailto:soporte@streetme.app">soporte@streetme.app</a>.</p>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 StreetMe · <a href="index.html">Soporte</a>
+</footer>
+
+</body>
+</html>

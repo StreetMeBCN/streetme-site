@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StreetMe — Soporte</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blue:#0052CC;
+    --blue-dark:#003C99;
+    --gold:#FFD700;
+    --ink:#12161C;
+    --paper:#F7F8FA;
+    --line:#E3E7EE;
+    --muted:#5B6472;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Plus Jakarta Sans', sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  header{
+    background:var(--blue);
+    color:#fff;
+    padding:64px 24px 56px;
+    position:relative;
+    overflow:hidden;
+  }
+  header::after{
+    content:"";
+    position:absolute;
+    right:-60px; top:-60px;
+    width:220px; height:220px;
+    border-radius:50%;
+    background:var(--gold);
+    opacity:0.18;
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:800;
+    font-size:20px;
+    letter-spacing:-0.02em;
+  }
+  .brand .dot{
+    width:10px;height:10px;border-radius:50%;
+    background:var(--gold);
+  }
+  header h1{
+    font-size:clamp(32px,5vw,44px);
+    font-weight:800;
+    letter-spacing:-0.03em;
+    margin:28px 0 8px;
+    max-width:640px;
+  }
+  header p{
+    font-size:17px;
+    color:#D9E4FF;
+    max-width:520px;
+    margin:0;
+    line-height:1.5;
+  }
+  main{
+    max-width:720px;
+    margin:0 auto;
+    padding:48px 24px 96px;
+  }
+  .card{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:28px 28px;
+    margin-bottom:20px;
+  }
+  .card h2{
+    font-size:15px;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    color:var(--blue);
+    font-weight:800;
+    margin:0 0 12px;
+  }
+  .card p, .card li{
+    color:var(--ink);
+    font-size:15.5px;
+    line-height:1.65;
+    margin:0 0 10px;
+  }
+  .card ul{padding-left:20px; margin:0;}
+  a.email{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    background:var(--ink);
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    font-size:15px;
+    padding:12px 20px;
+    border-radius:10px;
+    margin-top:4px;
+  }
+  a.email:hover{background:var(--blue-dark);}
+  .universes{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+    margin-top:4px;
+  }
+  .universe{
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:14px 10px;
+    text-align:center;
+    font-size:13.5px;
+    font-weight:600;
+  }
+  footer{
+    text-align:center;
+    padding:32px 24px 48px;
+    color:var(--muted);
+    font-size:13px;
+  }
+  footer a{color:var(--muted);}
+  @media (max-width:480px){
+    .universes{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand"><span class="dot"></span>StreetMe</div>
+  <h1>Soporte StreetMe</h1>
+  <p>Control + Descubrimiento. Aquí puedes resolver dudas, reportar un problema o escribirnos directamente.</p>
+</header>
+
+<main>
+
+  <div class="card">
+    <h2>Contacto</h2>
+    <p>¿Tienes un problema con la app, una sugerencia o cualquier duda? Escríbenos y te respondemos lo antes posible.</p>
+    <a class="email" href="mailto:soporte@streetme.app">✉ soporte@streetme.app</a>
+  </div>
+
+  <div class="card">
+    <h2>Preguntas frecuentes</h2>
+    <p><strong>¿StreetMe funciona sin conexión?</strong><br>
+    No. StreetMe necesita conexión a internet para mostrar lugares, horarios y calcular rutas en tiempo real.</p>
+    <p><strong>¿Por qué StreetMe pide mi ubicación?</strong><br>
+    La usamos únicamente para mostrarte lugares cercanos y calcular itinerarios. Tu ubicación no se almacena en nuestros servidores.</p>
+    <p><strong>¿Cómo elimino una calle o un lugar guardado?</strong><br>
+    Desde la ficha de la calle o del lugar, desliza o mantén pulsado el elemento y selecciona "Eliminar".</p>
+    <p><strong>¿Tengo que crear una cuenta?</strong><br>
+    No. StreetMe guarda tus calles e itinerarios directamente en tu dispositivo, sin registro necesario.</p>
+  </div>
+
+  <div class="card">
+    <h2>Qué encuentras en StreetMe</h2>
+    <div class="universes">
+      <div class="universe">🍽️ Gastronomía</div>
+      <div class="universe">🛍️ Compras</div>
+      <div class="universe">🎭 Cultura</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Más información</h2>
+    <p><a href="privacy.html">Política de privacidad →</a></p>
+  </div>
+
+</main>
+
+<footer>
+  © 2026 StreetMe · <a href="privacy.html">Privacidad</a>
+</footer>
+
+</body>
+</html>
