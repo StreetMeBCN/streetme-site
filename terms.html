@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StreetMe — Términos de Uso</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blue:#0052CC;
+    --blue-dark:#003C99;
+    --gold:#FFD700;
+    --ink:#12161C;
+    --paper:#F7F8FA;
+    --line:#E3E7EE;
+    --muted:#5B6472;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Plus Jakarta Sans', sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  header{
+    background:var(--blue);
+    color:#fff;
+    padding:56px 24px 48px;
+    position:relative;
+    overflow:hidden;
+  }
+  header::after{
+    content:"";
+    position:absolute;
+    right:-60px; top:-60px;
+    width:220px; height:220px;
+    border-radius:50%;
+    background:var(--gold);
+    opacity:0.18;
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:800;
+    font-size:20px;
+    letter-spacing:-0.02em;
+  }
+  .brand .dot{
+    width:10px;height:10px;border-radius:50%;
+    background:var(--gold);
+  }
+  header h1{
+    font-size:clamp(28px,4.5vw,38px);
+    font-weight:800;
+    letter-spacing:-0.03em;
+    margin:24px 0 8px;
+  }
+  header p{
+    font-size:15px;
+    color:#D9E4FF;
+    margin:0;
+  }
+  main{
+    max-width:720px;
+    margin:0 auto;
+    padding:40px 24px 96px;
+  }
+  section{
+    margin-bottom:28px;
+  }
+  section h2{
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    color:var(--blue);
+    font-weight:800;
+    margin:0 0 10px;
+  }
+  section p, section li{
+    font-size:15.5px;
+    line-height:1.7;
+    color:var(--ink);
+    margin:0 0 10px;
+  }
+  section ul{padding-left:20px;margin:0;}
+  a{color:var(--blue-dark);}
+  .back{
+    display:inline-block;
+    margin-bottom:24px;
+    font-size:14px;
+    font-weight:600;
+    color:var(--muted);
+    text-decoration:none;
+  }
+  footer{
+    text-align:center;
+    padding:32px 24px 48px;
+    color:var(--muted);
+    font-size:13px;
+  }
+  footer a{color:var(--muted); margin:0 6px;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand"><span class="dot"></span>StreetMe</div>
+  <h1>Términos de Uso</h1>
+  <p>Última actualización: 29 de julio de 2026</p>
+</header>
+
+<main>
+  <a class="back" href="index.html">← Volver a soporte</a>
+
+  <section>
+    <h2>Aceptación de los términos</h2>
+    <p>Al descargar, instalar o usar StreetMe, aceptas estos Términos de Uso. Si no estás de acuerdo, no utilices la aplicación.</p>
+  </section>
+
+  <section>
+    <h2>Descripción del servicio</h2>
+    <p>StreetMe es una aplicación de descubrimiento de lugares que organiza contenido en tres universos: Gastronomía, Compras y Cultura. Permite explorar lugares cercanos, guardar favoritos en listas personalizadas ("calles") y crear itinerarios con múltiples paradas.</p>
+  </section>
+
+  <section>
+    <h2>Origen de los datos</h2>
+    <p>La información sobre lugares (nombre, dirección, horarios, valoraciones) proviene de la API de Google Places, y las rutas se calculan mediante la API de Google Directions. StreetMe no genera ni verifica manualmente estos datos.</p>
+    <p>Los horarios, disponibilidad y demás detalles pueden estar desactualizados o ser inexactos, ya que dependen de terceros. Te recomendamos confirmar la información directamente con el establecimiento antes de desplazarte.</p>
+  </section>
+
+  <section>
+    <h2>Uso permitido</h2>
+    <ul>
+      <li>StreetMe está destinada a uso personal y no comercial.</li>
+      <li>No está permitido realizar ingeniería inversa, copiar o redistribuir la aplicación ni su contenido.</li>
+      <li>No está permitido usar la app para fines ilícitos o que infrinjan derechos de terceros.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Cuentas y datos guardados</h2>
+    <p>StreetMe no requiere la creación de una cuenta. Tus calles, favoritos e itinerarios se almacenan localmente en tu dispositivo. Si desinstalas la app o cambias de dispositivo sin copia de seguridad, esta información se perderá.</p>
+  </section>
+
+  <section>
+    <h2>Limitación de responsabilidad</h2>
+    <p>StreetMe se ofrece "tal cual", sin garantías de ningún tipo. No nos hacemos responsables de decisiones tomadas en base a la información mostrada (horarios, ubicaciones, rutas), ni de incidencias derivadas de terceros como Google Places o Google Directions.</p>
+    <p>En la medida permitida por la ley aplicable, StreetMe no será responsable de daños indirectos, incidentales o consecuentes derivados del uso de la aplicación.</p>
+  </section>
+
+  <section>
+    <h2>Servicios de terceros</h2>
+    <p>StreetMe utiliza servicios de Google (Places, Directions, Maps SDK). El uso de estos servicios está sujeto también a los términos y políticas propios de Google.</p>
+    <p><a href="https://policies.google.com/terms" target="_blank" rel="noopener">Términos de servicio de Google →</a></p>
+  </section>
+
+  <section>
+    <h2>Cambios en la aplicación y en estos términos</h2>
+    <p>Podemos actualizar StreetMe y estos Términos de Uso en cualquier momento. Los cambios relevantes se reflejarán en esta página con su fecha de actualización.</p>
+  </section>
+
+  <section>
+    <h2>Contacto</h2>
+    <p>Para cualquier duda sobre estos términos, escríbenos a <a href="mailto:soporte@streetme.app">soporte@streetme.app</a>.</p>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 StreetMe · <a href="index.html">Soporte</a> · <a href="privacy.html">Privacidad</a>
+</footer>
+
+</body>
+</html>
